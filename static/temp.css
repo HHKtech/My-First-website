@@ -1,0 +1,397 @@
+/* HEADER */
+* {
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: rgb(24, 63, 171); 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.navdiv {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+.name a {
+    font-size: 50px; 
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+label {
+    width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+li {
+    display: inline-block; 
+}
+li a {
+    color: white; 
+    margin-right: 20px; 
+    font-size: 20px;
+}
+button {
+    background-color: white; 
+    padding: 10px; 
+    border-radius: 5px; 
+    width: 90px; 
+    margin-left: 5px; 
+    margin-right: 10px;
+}
+button a {
+    color: darkblue; 
+    font-weight: bold; 
+    font-size: 15px;
+}
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+
+/* body */
+img {
+    display: block;
+    position: relative;
+    width: 98.9vw; /* Full width of the viewport */
+    height: 100vh; /*Full height of the viewport */
+     object-fit: cover; /*Ensures the image covers the entire area */
+    }
+
+
+  
+
+
+
+
+  .pic-cont .text {
+    position: absolute;
+    top: 40%; /* Vertically center the text */
+    color: white; /* Text color */
+    font-size: 50px;
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+    width: 100%; /* Ensures the text spans the container width */
+    text-align: center;
+    text-shadow: 2px 2px 5px black, -2px -2px 5px rgba(34, 133, 254, 0.562); /* Add a shadow for better visibility */
+    display: inline-block;
+    padding-bottom: 10px; /* Add space between the text and the custom line */
+}
+
+.pic-cont .text::after {
+    content: ""; /* Pseudo-element for the line */
+    display: block; /* Make it behave like a block element */
+    width: 50%; /* Line width relative to text */
+    height: 5px; /* Line thickness */
+    margin: 0 auto; /* Center the line */
+    background-color: rgb(255, 255, 255); /* Line color */
+    margin-top: 5px; /* Spacing between text and the line */
+    box-shadow: 2px 2px 5px black, -2px -2px 5px rgba(34, 133, 254, 0.562);
+}
+
+.pic-cont .subtext {
+    position: absolute;
+    top: 53%; /* Position it beneath the custom line */
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    width: 100%; /* Aligns text with the container width */
+    text-shadow: 2px 2px 5px black, -2px -2px 5px rgba(34, 133, 254, 0.562); /* Add shadow for visibility */
+}
+
+
+
+
+.bimage {
+    background-image: url("./gym122.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-color: brown;
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN LAYOUT FIX */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body takes up full height of the viewport */
+    margin: 0;
+}
+main {
+    flex: 1; /* This makes the content area grow and push the footer down if there's enough content */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.test {
+    position: relative;
+    height: 40%;
+    width: 90%;
+    /* background-color:rgb(228, 144, 144); */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 150px; 
+    vertical-align: middle;
+}
+
+.testimg{
+    border-radius: 150px; 
+    width: 307px; 
+    height: 307px; 
+    float: right;
+    margin-left: 0%;
+}
+
+
+.aboutimg{
+    font-size: 20px;
+    margin-left: 50px; 
+    margin-right: 2%;
+    width: 60%; 
+    display:inline-block;
+    margin-top: 40px; 
+    text-align: justify; 
+    line-height: 30px;
+    color: white;
+}
+
+.aboutimg1{
+    font-size: 20px;
+    width: 70%; 
+    margin-left: 5%;
+    display:inline-block;
+    margin-top: 40px; 
+    text-align: justify; 
+    line-height: 30px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Membership Container */
+.membership-container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Title */
+.membership-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #071254;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Packages Layout */
+.packages {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Individual Package */
+.package {
+    background: linear-gradient(150deg, #5789df 60%, #4c74f58f 60%);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #000000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.package:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Popular Package Highlight */
+.popular {
+    border: 2px solid #ff6347;
+}
+
+.popular h2 {
+    background: linear-gradient(45deg, #c0c0c0, #dcdcdc, #b0b0b0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Package Title */
+.package h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Price */
+.price {
+    font-size: 28px;
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+/* Features List */
+.package ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.package ul li {
+    margin: 10px 0;
+}
+
+/* Button */
+.btn {
+    background-color: #1843d1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #6483f2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer {
+    background-color: rgb(110, 161, 251);
+    padding: 10px 0;
+}
+.container {
+    display: flex;
+    font-size: 17px;
+}
+h3 {
+    font-size: 20px;
+    align-items: center;
+    color: black;
+    text-transform: uppercase;
+}
+.contact {
+    width: 30%;
+    text-align: left;
+    margin-left: 5%;
+    color: white;
+}
+.link {
+    width: 30%;
+    margin-left: 10%;
+}
+.link a {
+    align-content: center;
+    color: white;
+}
+.link a:hover {
+    color: orangered;
+}
+.follow {
+    width: 30%;
+    margin-left: 10%;
+}
+.follow ul li {
+    margin-right: 15px;
+}
+.bottomBar {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+

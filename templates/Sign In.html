@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Club</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='temp.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<!-- *************HEADER************************ -->
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="name"> <a href="/home"> <label>FITNESS CLUB</label> </a></div>
+            <ol>
+                <li> <a href="/home">Home</a></li>
+                <li> <a href="/about">About Us</a></li>
+                <li> <a href="/membership">Membership</a></li>
+                <button><a href="/signup"> Sign Up</a></button>
+                <button><a href="/signin"> Sign In</a></button>
+            </ol>
+        </div>
+    </nav>
+<!--******************* BODY ***********************-->
+<div class="sign">sign in</div>
+<!-- *****************FOOTER************************ -->
+ <footer>
+    <div class="container">
+        <div class="contact" style="text-align: center;" >
+            <h3>Contact Us</h3>
+            <div>
+                <span class="fas fa-phone-alt"></span>
+                <span>Phone: 021-45678910</span><br>
+            <!-- </div>
+            <div> -->
+                <span class="fas fa-envelope"></span>
+                <span>Email: into@FitnessClub.com</span><br>
+            <!-- </div>
+            <div> -->
+                <span class="fas fa-map-marker-alt"></span>
+                <span>Address: Main Khayaban-e-Muslim, D.H.A Phase 6, Karachi.</span>
+            </div>
+        </div>
+        <div class="link" style="text-align: center;">
+            <h3>Quick Links</h3>
+                <span><a href="/home">Home</a></span><br>
+                <span><a href="/about">About</a></span><br>
+                <span><a href="/membership">Membership</a></span><br>
+                <span><a href="/signup">Sign Up</a></span><br>
+                <span><a href="/signin">Sign In</a></span><br>                
+        </div>
+        <div class="follow" style="text-align: center;">
+            <h3>Follow Us</h3>
+                <ul class="social-icons">
+                 <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                 <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                 <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                 <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+        </div>
+    </div>
+    <div class="bottomBar">
+        <p>&copy; 2024 Fitness Club . All rights reserved</p>
+    </div>
+ </footer>
+
+</body>
+</html>
